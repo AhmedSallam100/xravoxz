@@ -12,7 +12,6 @@
 
 // Write Effect
 let animatedH1 = document.querySelector(".animated-h1");
-
 let myText = "Front End Developer";
 let width = animatedH1.clientWidth;
 let i = 20;
@@ -30,6 +29,7 @@ let a = setInterval(() => {
     i += 20;
   }
 }, 200);
+
 // Active Link On Click
 let links = document.querySelectorAll(".center ul li a");
 
@@ -78,3 +78,31 @@ window.addEventListener("scroll", function () {
     toTop.classList.remove("active-scroll");
   }
 });
+
+// Show Images
+let imgs = document.querySelectorAll(".open");
+let main = document.querySelector("main");
+let header = document.querySelector(".head");
+let openedImgCont = document.querySelector(".openedImg");
+let openedImg = document.querySelector(".openedImg img");
+let closeImg = document.querySelector(".openedImg i");
+let spanClose = document.querySelector(".openedImg span");
+
+imgs.forEach((ele) => {
+  ele.onclick = function () {
+    console.log(ele.getAttribute("src"));
+    openedImg.setAttribute("src", ele.getAttribute("src"));
+    openedImgCont.style.transform = "translate(-50%, -50%)";
+    openedImgCont.classList.add("blur-50");
+  };
+});
+
+closeImg.onclick = function () {
+  openedImgCont.style.transform = "translate(50%, -50%)";
+  openedImgCont.classList.remove("blur-50");
+};
+
+spanClose.onclick = function () {
+  openedImgCont.style.transform = "translate(50%, -50%)";
+  openedImgCont.classList.remove("blur-50");
+};
