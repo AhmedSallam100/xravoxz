@@ -146,6 +146,8 @@ body {
   box-shadow: 0px 0px 10px var(--main-color);
 }
 .head .left h1 a {
+  display: flex;
+  align-items: center;
   transition: 0.3s;
 }
 .head .left h1 a:hover {
