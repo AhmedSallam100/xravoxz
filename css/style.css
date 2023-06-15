@@ -104,50 +104,9 @@ body {
   }
 }
 /************ End Loader  ************/
-/************ Start Slide  ************/
-.point-slide {
-  display: none !important;
-  position: fixed;
-  z-index: 55;
-  display: flex;
-  flex-direction: column;
-  right: 22px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.point-slide a {
-  width: 10px;
-  height: 10px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 15px 10px;
-  cursor: pointer;
-  position: relative;
-  transition: 0.5s;
-  box-shadow: 0px 0px 10px #ffffff;
-}
-.point-slide a::after {
-  content: "";
-  width: 300%;
-  height: 300%;
-  position: absolute;
-  background-color: var(--main-color);
-  z-index: -1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  backdrop-filter: blur(5px);
-}
-.point-slide a.active-3 {
-  background-color: hsl(291deg 100% 61%);
-}
-/************ End Slide  ************/
 /************ Start Header ************/
 .head {
   position: fixed;
-  top: 0;
   z-index: 99999;
   width: 100vw;
   background-color: var(--header-color);
@@ -437,7 +396,7 @@ body {
 }
 /************ End About ************/
 /************ Start Services ************/
-section:not(.home) {
+section:not(.home, .main-start) {
   padding-bottom: 20px;
 }
 .boxes {

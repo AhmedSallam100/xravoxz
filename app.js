@@ -1,34 +1,41 @@
-// let startBtn = document.querySelector(".start-button");
-// let webStart = document.querySelector(".start-web");
-// let pointSilde = document.querySelector(".point-slide");
+let startBtn = document.querySelector(".start-button");
+let webStart = document.querySelector(".start-web");
+let main = document.querySelector("main");
+main.style.display = "none";
+let head = document.querySelector(".head");
+head.style.display = "none";
 
-// startBtn.addEventListener("click", () => {
-//   webStart.classList.add("remove-start");
-//   webStart.classList.remove("start-web");
-//   startBtn.style.display = "none";
-//   document.body.classList.remove("flow-hidden");
-//   pointSilde.style.display = "flex !important";
-// });
-
-// Write Effect
 let animatedH1 = document.querySelector(".animated-h1");
 let myText = "Front End Developer";
-let width = animatedH1.clientWidth;
-let i = 20;
 
-let a = setInterval(() => {
-  animatedH1.style.width = `${i}px`;
-  if (i > width) {
-    let b = setInterval(() => {
-      i -= 20;
-      if (i == 0) {
-        clearInterval(b);
-      }
-    }, 200);
-  } else {
-    i += 20;
-  }
-}, 200);
+startBtn.addEventListener("click", () => {
+  webStart.classList.add("remove-start");
+  webStart.classList.remove("start-web");
+  startBtn.remove();
+  head.style.display = "flex";
+  main.style.display = "block";
+  document.body.style.overflowY = "scroll";
+  console.log(animatedH1.offsetWidth);
+
+  let width = animatedH1.offsetWidth;
+  let i = 20;
+
+  let a = setInterval(() => {
+    animatedH1.style.width = `${i}px`;
+    if (i > width) {
+      let b = setInterval(() => {
+        i -= 20;
+        if (i == 0) {
+          clearInterval(b);
+        }
+      }, 200);
+    } else {
+      i += 20;
+    }
+  }, 200);
+});
+
+// Write Effect
 
 // Active Link On Click
 let links = document.querySelectorAll(".center ul li a");
@@ -43,7 +50,7 @@ links.forEach((ele) => {
 });
 
 // Active Link On Scroll
-let sections = document.querySelectorAll("section");
+let sections = document.querySelectorAll(".home, .services, .skills, .work");
 
 window.addEventListener("scroll", function () {
   sections.forEach(function (s) {
@@ -81,7 +88,6 @@ window.addEventListener("scroll", function () {
 
 // Show Images
 let imgs = document.querySelectorAll(".open");
-let main = document.querySelector("main");
 let header = document.querySelector(".head");
 let openedImgCont = document.querySelector(".openedImg");
 let openedImg = document.querySelector(".openedImg img");
@@ -106,16 +112,3 @@ spanClose.onclick = function () {
   openedImgCont.style.transform = "translate(50%, -50%)";
   openedImgCont.classList.remove("blur-50");
 };
-
-// Loader
-let bgLoading = document.getElementById("bgLoading");
-let bgLoadingCont = document.querySelector("#bgLoading .loading-container");
-setTimeout(function lode() {
-  bgLoadingCont.style.opacity = "0";
-  bgLoading.style.pointerEvents = "none";
-  bgLoading.style.backdropFilter = "blur(0px)";
-  setTimeout(function lodenone() {
-    bgLoadingCont.style.display = "none";
-    bgLoading.style.display = "none";
-  }, 1500);
-}, 1500);
