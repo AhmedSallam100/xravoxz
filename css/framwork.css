@@ -51,6 +51,9 @@
   margin: auto;
 }
 .start-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--main-color);
   color: #fff;
   border: none;
@@ -176,6 +179,18 @@
 }
 .flow-hidden {
   overflow: hidden;
+}
+.rectangle {
+  margin: 20px;
+}
+.rectangle::after {
+  display: block;
+  width: 0px;
+  height: 0px;
+  content: "";
+  border-left: 27px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 .m-st {
