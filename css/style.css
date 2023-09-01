@@ -582,7 +582,7 @@ section:not(.home, .main-start) {
   transition: 0.3s;
 }
 .card .content a:hover {
-  color: var(--text-color);
+  color: var(--main-color);
 }
 .space {
   display: block;
