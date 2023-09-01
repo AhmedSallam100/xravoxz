@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ html {
 }
 body {
   height: 100vh;
-  background-color: var(--bg-color);
+  background-color: #0b061d;
 }
 ::selection {
   color: white;
@@ -109,7 +109,8 @@ body {
   position: fixed;
   z-index: 99999;
   width: 100vw;
-  background-color: var(--header-color);
+  background-color: #0d081f;
+  border-bottom: 1px solid var(--card2-color);
 }
 .head .container {
   display: flex;
@@ -140,10 +141,10 @@ body {
   width: 100%;
   height: 15px;
   position: absolute;
-  top: -30px;
-  border-radius: 6px;
+  top: -35px;
+  border-radius: 26px;
   background-color: var(--main-color);
-  box-shadow: 0px 0px 10px var(--main-color);
+  /* box-shadow: 0px 0px 10px var(--main-color); */
 }
 .head .left h1 a {
   display: flex;
@@ -412,7 +413,8 @@ section:not(.home, .main-start) {
   position: relative;
   transition: 0.8s;
   border-radius: 6px;
-  background-color: var(--card1-color);
+  background-color: #0e0726;
+  border: 1px solid var(--header-color);
 }
 .boxes .box::before {
   content: "";
@@ -424,7 +426,7 @@ section:not(.home, .main-start) {
   position: absolute;
   width: 0;
   transition: 0.8s;
-  box-shadow: 0px 0px 10px var(--main-color);
+  /* box-shadow: 0px 0px 10px var(--main-color); */
 }
 .boxes .box:hover {
   transform: translateY(-20px);
@@ -492,26 +494,26 @@ section:not(.home, .main-start) {
   text-align: center;
 }
 .html div {
-  background: conic-gradient(#6b00e3 calc(90deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(90deg * 3.6), #2a2544 0deg);
   transition: 0.5s;
 }
 .css div {
-  background: conic-gradient(#6b00e3 calc(80deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(80deg * 3.6), #2a2544 0deg);
 }
 .js div,
 .bootstrap div {
-  background: conic-gradient(#6b00e3 calc(75deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(75deg * 3.6), #2a2544 0deg);
 }
 .react div {
-  background: conic-gradient(#6b00e3 calc(10deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(10deg * 3.6), #2a2544 0deg);
 }
 .sass div,
 .pugjs div {
-  background: conic-gradient(#6b00e3 calc(70deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(70deg * 3.6), #2a2544 0deg);
 }
 .github div,
 .photoShop div {
-  background: conic-gradient(#6b00e3 calc(85deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(85deg * 3.6), #2a2544 0deg);
 }
 .circle-progress::before {
   content: "";
@@ -519,7 +521,7 @@ section:not(.home, .main-start) {
   height: 140px;
   width: 140px;
   border-radius: 50%;
-  background-color: var(--bg-color);
+  background-color: #0b061d;
 }
 .progress-value {
   position: relative;
@@ -541,7 +543,8 @@ section:not(.home, .main-start) {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: var(--card1-color);
+  border: 1px solid var(--header-color);
+  background-color: #0b061d;
 }
 .card .img-box {
   position: absolute;
@@ -594,7 +597,7 @@ section:not(.home, .main-start) {
   padding: 15px;
   width: fit-content;
   margin: 20px auto 0;
-  border-radius: 6px;
+  border-radius: 16px;
   font-weight: bold;
   font-size: 20px;
   display: flex;
@@ -681,7 +684,8 @@ section:not(.home, .main-start) {
 footer {
   margin-top: 10px;
   padding: 20px;
-  background-color: var(--header-color);
+  background-color: #0d081f;
+  border-top: 1px solid var(--card2-color);
 }
 .contact-footer {
   position: absolute;
