@@ -236,6 +236,7 @@ width: 150px;
   font-size: 23px;
   color: white;
   background-color: #30225086;
+  border-raduis: 6px;
   border: 1px solid rgba(255, 255, 255, 0.24);
 }
 .nav-links a:hover {
@@ -284,11 +285,11 @@ width: 150px;
   animation: up-down 3s infinite linear;
 }
 .animated-h1 {
-  color: var(--orange-color);
+  color: var(--main-color);
   animation: blink 0.5s infinite;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 1px solid var(--orange-color);
+  border-right: 1px solid var(--main-color);
   max-width: fit-content !important;
 }
 .scroll-icon {
@@ -878,7 +879,7 @@ footer {
 }
 @keyframes blink {
   from {
-    border-right-color: var(--orange-color);
+    border-right-color: var(--main-color);
   }
   to {
     border-right-color: transparent;
