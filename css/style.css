@@ -124,6 +124,7 @@ body {
   gap: 50px;
   font-size: 22px;
   font-weight: bold;
+  direction: rtl;
 }
 .center ul li a {
   position: relative;
