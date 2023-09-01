@@ -159,19 +159,20 @@ body {
   display: none;
 }
 .btn {
-  width: 150px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  transition: all 0.5s ease-in-out;
-  font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  background: var(--card2-color);
-  color: #f5f5f5;
-  cursor: pointer;
+width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    background: #130b30;
+    border: 1px solid #2a2544;
+    color: #f5f5f5;
+    cursor: pointer;
 }
 .btn:hover {
   box-shadow: 0 0 20px 0px #2e2e2e3a;
