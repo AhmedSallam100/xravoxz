@@ -129,6 +129,8 @@ body {
 .center ul li a {
   position: relative;
   transition: 0.3s;
+      font-weight: 400;
+  font-family: "Alexandria", sans-serif !important;
 }
 .center ul li a:hover {
   letter-spacing: 1px;
