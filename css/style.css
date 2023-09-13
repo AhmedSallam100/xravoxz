@@ -7,7 +7,7 @@
   color: white;
 }
 :root {
-  --main-color: #6b00e3;
+  --main-color: #560ff3;
   --text-color: #a199cb;
   --orange-color: #f28600;
   --bg-color: #121128;
@@ -492,26 +492,26 @@ section:not(.home, .main-start) {
   text-align: center;
 }
 .html div {
-  background: conic-gradient(#6b00e3 calc(90deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(90deg * 3.6), #2a2544 0deg);
   transition: 0.5s;
 }
 .css div {
-  background: conic-gradient(#6b00e3 calc(80deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(80deg * 3.6), #2a2544 0deg);
 }
 .js div,
 .bootstrap div {
-  background: conic-gradient(#6b00e3 calc(75deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(75deg * 3.6), #2a2544 0deg);
 }
 .react div {
-  background: conic-gradient(#6b00e3 calc(10deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(10deg * 3.6), #2a2544 0deg);
 }
 .sass div,
 .pugjs div {
-  background: conic-gradient(#6b00e3 calc(70deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(70deg * 3.6), #2a2544 0deg);
 }
 .github div,
 .photoShop div {
-  background: conic-gradient(#6b00e3 calc(85deg * 3.6), #2a2544 0deg);
+  background: conic-gradient(#560ff3 calc(85deg * 3.6), #2a2544 0deg);
 }
 .circle-progress::before {
   content: "";
